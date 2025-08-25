@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
               {/* Bouton Paiement - visible uniquement sur la page menu */}
               {isMenuPage && (
                 <button
-                  id="payment-btn"
+                  id="payment-button"
                   className="bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
                 >
                   Paiement

@@ -1,6 +1,6 @@
 // pages/menu.js
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -278,13 +278,13 @@ export default function Menu() {
   };
 
   // Gérer le clic sur le bouton paiement du layout
-  const handlePaymentClick = () => {
+  const handlePaymentClick = useCallback(() => {
     if (cart.length > 0) {
       setShowPayment(true);
     } else {
       alert("Votre panier est vide !");
     }
-  };
+  }, [cart]);
 
   // Connecter le bouton paiement du layout
   useEffect(() => {
@@ -292,25 +292,15 @@ export default function Menu() {
       handlePaymentClick();
     };
 
-    const paymentBtn = document.getElementById("payment-btn");
-    const paymentBtnMobile = document.getElementById("payment-btn-mobile");
+    // Exemple : ajouter l'événement sur un bouton
+    const btn = document.getElementById("payment-button");
+    if (btn) btn.addEventListener("click", handlePaymentButtonClick);
 
-    if (paymentBtn) {
-      paymentBtn.addEventListener("click", handlePaymentButtonClick);
-    }
-    if (paymentBtnMobile) {
-      paymentBtnMobile.addEventListener("click", handlePaymentButtonClick);
-    }
-
+    // Nettoyage à la fin
     return () => {
-      if (paymentBtn) {
-        paymentBtn.removeEventListener("click", handlePaymentButtonClick);
-      }
-      if (paymentBtnMobile) {
-        paymentBtnMobile.removeEventListener("click", handlePaymentButtonClick);
-      }
+      if (btn) btn.removeEventListener("click", handlePaymentButtonClick);
     };
-  }, [cart]);
+  }, [cart, handlePaymentClick]);
 
   // Fonction de confirmation de commande simplifiée
   const submitOrder = async (customerInfo) => {
