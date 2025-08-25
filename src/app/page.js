@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import equipe from "./images/equipe.jpg";
 import salle from "@/app/images/salle.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -58,10 +59,10 @@ export default function Home() {
 
             <div className="md:w-1/2">
               <p className="text-gray-700 text-lg mb-6">
-                Fondé en 2025, <strong>Resto Bhil$</strong> vous invite à
-                savourer des plats délicieux et variés, préparés avec soin dans
-                un cadre chaleureux et moderne. Notre équipe sélectionne les
-                meilleurs ingrédients pour vous offrir une expérience culinaire
+                Fondé en 2025, <strong> Bhil$</strong> vous invite à savourer
+                des plats délicieux et variés, préparés avec soin dans un cadre
+                chaleureux et moderne. Notre équipe sélectionne les meilleurs
+                ingrédients pour vous offrir une expérience culinaire
                 inoubliable.
               </p>
               <p className="text-gray-700 text-lg">
@@ -84,9 +85,11 @@ export default function Home() {
             Réservez votre table dès maintenant et préparez-vous pour un voyage
             culinaire inoubliable au cœur de la France.
           </p>
-          <button className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105 shadow-lg">
-            Réserver maintenant
-          </button>
+          <Link href="reservation">
+            <button className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+              Réserver maintenant
+            </button>
+          </Link>
         </div>
       </section>
     </div>

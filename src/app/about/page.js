@@ -198,7 +198,7 @@ export default function About() {
             Notre Engagement
           </h2>
           <p className="text-lg text-amber-700 mb-8 leading-relaxed">
-            Chez <strong>Resto App</strong>, nous nous engageons à proposer des
+            Chez <strong>Bhil$</strong>, nous nous engageons à proposer des
             plats savoureux, faits maison, tout en respectant notre
             environnement et notre communauté. Nous privilégions les ingrédients
             frais, locaux et de saison, pour une cuisine responsable et
@@ -242,9 +242,11 @@ export default function About() {
             culinaire inoubliable au cœur de Paris.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white hover:bg-amber-100 text-amber-800 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-              Réserver une table
-            </button>
+            <Link href="reservation">
+              <button className="bg-white hover:bg-amber-100 text-amber-800 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Réserver une table
+              </button>
+            </Link>
             <Link href="/menu">
               <button className="border-2 border-white hover:bg-white hover:text-amber-800 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300">
                 Voir notre menu

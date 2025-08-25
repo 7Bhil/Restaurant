@@ -149,9 +149,9 @@ export default function Contact() {
                       Adresse
                     </h3>
                     <p className="text-gray-700">
-                      23 Rue du Gourmet
+                      Rue de l'ecole le prodige
                       <br />
-                      75008 Paris, France
+                      Agbokou Porto-Novo, Benin
                     </p>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export default function Contact() {
                         href="tel:+33142869574"
                         className="hover:text-amber-600 transition-colors"
                       >
-                        +33 1 42 86 95 74
+                        +229 98 87 40 19
                       </Link>
                     </p>
                     <p className="text-sm text-gray-500 mt-1">
@@ -215,7 +215,7 @@ export default function Contact() {
                         href="mailto:contact@gourmetparisien.fr"
                         className="hover:text-amber-600 transition-colors"
                       >
-                        contact@gourmetparisien.fr
+                        7bhilal.chitou7@gmail.com
                       </Link>
                     </p>
                     <p className="text-sm text-gray-500 mt-1">
@@ -488,7 +488,9 @@ export default function Contact() {
                   />
                 </svg>
                 <p className="text-lg font-medium">Plan interactif</p>
-                <p className="text-sm">23 Rue du Gourmet, 75008 Paris</p>
+                <p className="text-sm">
+                  Rue du cours primaire "Le prodige",Agbokou Porto-Novo
+                </p>
               </div>
             </div>
 
@@ -499,26 +501,6 @@ export default function Contact() {
               </h3>
 
               <div className="space-y-6">
-                <div className="p-4 bg-amber-50 rounded-lg">
-                  <h4 className="font-bold text-amber-800 mb-2">
-                    🚇 Transports en Commun
-                  </h4>
-                  <ul className="text-gray-700 space-y-1">
-                    <li>• Métro : Ligne 9 - Station Franklin D. Roosevelt</li>
-                    <li>• Bus : Lignes 28, 32, 80</li>
-                    <li>• RER : RER A - Station Auber (10 min à pied)</li>
-                  </ul>
-                </div>
-
-                <div className="p-4 bg-amber-50 rounded-lg">
-                  <h4 className="font-bold text-amber-800 mb-2">🅿️ Parking</h4>
-                  <ul className="text-gray-700 space-y-1">
-                    <li>• Parking Haussman - Saint-Lazare (5 min)</li>
-                    <li>• Parking Vendôme (8 min)</li>
-                    <li>• Places de stationnement payant dans la rue</li>
-                  </ul>
-                </div>
-
                 <div className="p-4 bg-amber-50 rounded-lg">
                   <h4 className="font-bold text-amber-800 mb-2">
                     ♿ Accessibilité
@@ -536,9 +518,9 @@ export default function Contact() {
                   <h4 className="font-bold text-amber-800 mb-2">💡 À Savoir</h4>
                   <ul className="text-gray-700 space-y-1">
                     <li>• Réservation recommandée</li>
-                    <li>• Carte bancaire et espèces acceptées</li>
+                    <li>• Paiement virtel et espèces acceptées</li>
                     <li>• Menu enfant disponible</li>
-                    <li>• Terrasse chauffée en hiver</li>
+                    <li>• Terrasse protégé contre la pluie</li>
                   </ul>
                 </div>
               </div>
@@ -560,8 +542,8 @@ export default function Contact() {
                 Comment puis-je réserver une table ?
               </h3>
               <p className="text-gray-700">
-                Vous pouvez réserver par téléphone au +33 1 42 86 95 74, par
-                email à contact@gourmetparisien.fr, ou en utilisant notre
+                Vous pouvez réserver par téléphone au +229 98 87 40 19, par
+                email à 7bhilal.chitou7@gmail.com, ou en utilisant notre
                 formulaire de contact. Nous recommandons de réserver à l'avance,
                 surtout pour les week-ends.
               </p>
@@ -586,8 +568,8 @@ export default function Contact() {
               <p className="text-gray-700">
                 Absolument ! Nous organisons des événements privés,
                 anniversaires, repas d'entreprise et célébrations spéciales.
-                Contactez-nous pour discuter de vos besoins et recevoir un devis
-                personnalisé.
+                Contactez-nous pour discuter de vos besoins et recevoir un
+                traitement personnalisé.
               </p>
             </div>
 
@@ -596,9 +578,9 @@ export default function Contact() {
                 Avez-vous une terrasse ?
               </h3>
               <p className="text-gray-700">
-                Oui, nous disposons d'une belle terrasse chauffée qui peut
-                accueillir jusqu'à 30 personnes. Elle est ouverte selon les
-                conditions météorologiques et la saison.
+                Oui, nous disposons d'une belle terrasse qui peut accueillir
+                jusqu'à 30 personnes. Elle est ouverte selon les conditions
+                météorologiques et la saison.
               </p>
             </div>
 
@@ -607,9 +589,8 @@ export default function Contact() {
                 Quels sont vos moyens de paiement acceptés ?
               </h3>
               <p className="text-gray-700">
-                Nous acceptons les cartes bancaires (Visa, Mastercard, American
-                Express), les espèces, les chèques et les tickets restaurant.
-                Les paiements contactless sont également disponibles.
+                Nous acceptons les Paimement virtuel (MTN, Moov, Celtis), les
+                espèces, restaurant.
               </p>
             </div>
           </div>
@@ -628,13 +609,13 @@ export default function Contact() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+33142869574"
+              href="tel:+229 98 87 40 19"
               className="bg-white hover:bg-amber-100 text-amber-800 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Appeler maintenant
             </Link>
             <Link
-              href="mailto:contact@gourmetparisien.fr"
+              href="7bhilal.chitou7@gmail.com"
               className="border-2 border-white hover:bg-white hover:text-amber-800 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300"
             >
               Envoyer un email

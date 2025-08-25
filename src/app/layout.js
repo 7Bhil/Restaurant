@@ -248,8 +248,8 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="flex flex-col items-center md:items-end">
-              <p className="text-amber-200 mb-2">Ouvert du Lundi au Samedi</p>
-              <p className="text-amber-200">De 08h à 21h30</p>
+              <p className="text-amber-200 mb-2">Ouvert du Mardi au Dimanche</p>
+              <p className="text-amber-200">De 08h à 22h30</p>
               <p className="text-amber-200 mt-2">Tél: 01 98 87 40 19</p>
             </div>
           </div>
