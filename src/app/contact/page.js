@@ -42,62 +42,6 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-amber-50">
-      <Head>
-        <title>Contact - Le Gourmet Parisien</title>
-        <meta
-          name="description"
-          content="Contactez Le Gourmet Parisien pour toute question ou réservation"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      {/* Navigation */}
-      <nav className="bg-white shadow-md py-4 px-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-serif font-bold text-amber-800">
-            Le Gourmet Parisien
-          </h1>
-          <div className="hidden md:flex space-x-6">
-            <Link href="/" className="text-amber-700 hover:text-amber-900">
-              Accueil
-            </Link>
-            <Link href="/menu" className="text-amber-700 hover:text-amber-900">
-              Menu
-            </Link>
-            <Link href="/about" className="text-amber-700 hover:text-amber-900">
-              À propos
-            </Link>
-            <Link
-              href="/contact"
-              className="text-amber-700 font-semibold border-b-2 border-amber-600"
-            >
-              Contact
-            </Link>
-            <button className="text-amber-700 hover:text-amber-900">
-              Paiement
-            </button>
-          </div>
-
-          {/* Bouton hamburger pour mobile */}
-          <button className="md:hidden focus:outline-none">
-            <svg
-              className="w-6 h-6 text-amber-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-amber-100 to-amber-200">
         <div className="container mx-auto px-4 text-center">

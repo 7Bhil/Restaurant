@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Galerie() {
@@ -438,9 +439,11 @@ export default function Galerie() {
             Réservez votre table et venez découvrir par vous-même l'ambiance
             unique de notre restaurant.
           </p>
-          <button className="bg-white hover:bg-amber-100 text-amber-800 font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105 shadow-lg">
-            Réserver maintenant
-          </button>
+          <Link href="/reservation">
+            <button className="bg-white hover:bg-amber-100 text-amber-800 font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+              Réserver maintenant
+            </button>
+          </Link>
         </div>
       </section>
     </div>

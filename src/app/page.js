@@ -29,9 +29,11 @@ export default function Home() {
             Découvrez la véritable cuisine préparée avec des ingrédients locaux
             et saisonniers par notre chef étoilé.
           </p>
-          <button className="bg-amber-600 z-10 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
-            Réserver maintenant
-          </button>
+          <Link href="/reservation">
+            <button className="bg-amber-600 z-10 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+              Réserver maintenant
+            </button>
+          </Link>
         </div>
       </section>
 

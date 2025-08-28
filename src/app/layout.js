@@ -163,11 +163,6 @@ export default function RootLayout({ children }) {
                   />
                 </svg>
               </button>
-
-              <h2 className="text-xl font-serif font-bold text-amber-800 mb-8 mt-8">
-                Navigation
-              </h2>
-
               <div className="flex flex-col space-y-6">
                 <Link
                   href="/"
@@ -246,6 +241,59 @@ export default function RootLayout({ children }) {
               </h3>
               <p className="text-amber-200">Porto-Novo, Agbokou</p>
             </div>
+
+            <nav className="mb-6 md:mb-0">
+              <ul className="flex flex-wrap justify-center gap-6 md:gap-8">
+                <li>
+                  <Link
+                    href="/"
+                    className="text-amber-200 hover:text-white transition"
+                  >
+                    Accueil
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/menu"
+                    className="text-amber-200 hover:text-white transition"
+                  >
+                    Menu
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-amber-200 hover:text-white transition"
+                  >
+                    À propos
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/galerie"
+                    className="text-amber-200 hover:text-white transition"
+                  >
+                    Galerie
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/reservation"
+                    className="text-amber-200 hover:text-white transition"
+                  >
+                    Réservation
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="text-amber-200 hover:text-white transition"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
 
             <div className="flex flex-col items-center md:items-end">
               <p className="text-amber-200 mb-2">Ouvert du Mardi au Dimanche</p>
