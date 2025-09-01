@@ -110,8 +110,11 @@ export default function ReservationPage() {
       <div className="h-20"></div>
 
       {/* Hero Section */}
-      <section className="relative py-10 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-amber-600 to-amber-800">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-600 to-amber-800">
+        {/* Overlay sombre */}
         <div className="absolute inset-0 bg-black/20"></div>
+
+        {/* Contenu */}
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight">
             Réservez votre table

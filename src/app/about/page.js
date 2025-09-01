@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-amber-100 to-amber-200">
+      <section className="relative min-h-screen flex items-center justify-center py-20 bg-gradient-to-r from-amber-100 to-amber-200">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-amber-800 mb-6">
             Notre Histoire
